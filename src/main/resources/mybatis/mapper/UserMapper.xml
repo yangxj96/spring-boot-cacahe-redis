@@ -1,0 +1,34 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper  namespace="com.it100000.dao.UserDao">
+
+    <select id="queryAll" resultType="com.it100000.entity.User">
+        SELECT id, username, password FROM t_user;
+    </select>
+
+    <select id="findUserById" parameterType="int" resultType="com.it100000.entity.User">
+        SELECT id, username, password FROM t_user WHERE id = #{id}
+    </select>
+
+    <update id="updateUser" parameterType="com.it100000.entity.User"
+            useGeneratedKeys="true" keyColumn="id" keyProperty="id">
+        UPDATE t_user
+            <set>
+                <if test="user.username != null">
+                    username = #{user.username},
+                </if>
+
+                <if test="user.password != null">
+                    password = #{user.password},
+                </if>
+            </set>
+        WHERE
+           id = #{user.id}
+    </update>
+
+    <delete id="deleteUserById" parameterType="int" >
+        DELETE FROM t_user WHERE id = #{id}
+    </delete>
+
+</mapper>

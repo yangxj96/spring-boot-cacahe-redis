@@ -1,0 +1,38 @@
+# 开启debug模式
+debug: true
+spring:
+  # redis 数据库配置
+  redis:
+    # 数据库索引
+    database: 0
+    # 数据库地址
+    host: localhost
+    # 数据库端口
+    port: 6379
+    # 数据库连接密码(默认为空)
+    password:
+    jedis:
+      pool:
+        # 连接池最大连接数（使用负值表示没有限制）
+        max-active: 8
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1
+        # 连接池中的最大空闲连接
+        max-idle: 8
+        # 连接池中的最小空闲连接
+        min-idle: 0
+        # 连接超时时间 (毫秒)
+    timeout: 5000
+  # mysql 数据库配置
+  datasource:
+    url: jdbc:mysql:///springboot-cache-redis
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+  # thymeleaf 模板配置
+  thymeleaf:
+    cache: false
+# MyBatis配置
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  type-aliases-package: com.it100000.dao
