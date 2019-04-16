@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * @author 卓劲科技
+ * @author 道一
  * @date 2019/4/15 15:55
  */
 @Slf4j
@@ -26,7 +26,7 @@ public class UserController {
     /**
      * 功能描述：查询所有数据
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 16:03
      */
     @RequestMapping(value = "/queryUserAll", method = RequestMethod.POST)
@@ -39,7 +39,7 @@ public class UserController {
     /**
      * 功能描述：根据ID查询数据
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 16:03
      */
     @RequestMapping(value = "/queryUserById", method = RequestMethod.POST)
@@ -52,7 +52,7 @@ public class UserController {
     /**
      * 功能描述：更新数据
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 16:03
      */
     @RequestMapping(value = "/updateUserInfoById", method = RequestMethod.POST)
@@ -68,7 +68,7 @@ public class UserController {
     /**
      * 功能描述：根据ID删除用户
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 16:03
      */
     @RequestMapping(value = "/deleteUserById", method = RequestMethod.POST)

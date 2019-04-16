@@ -13,7 +13,7 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 /**
  * Reids缓存配置类
- * @author 卓劲科技
+ * @author 道一
  * @date 2019/4/15 14:48
  */
 @Configuration
@@ -28,7 +28,7 @@ public class RedisConfig {
      *
      * @param
      * @return
-     * @author  卓劲科技
+     * @author  道一
      * @date    2019/4/15 16:46
      */
     @Bean

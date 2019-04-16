@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author 卓劲科技
+ * @author 道一
  * @date 2019/4/15 15:13
  */
 @Slf4j
@@ -30,7 +30,7 @@ public class UserServerImpl implements UserServer {
     /**
      * 功能描述：查询所有
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 15:12
      */
     @Override
@@ -41,7 +41,7 @@ public class UserServerImpl implements UserServer {
     /**
      * 功能描述：根据ID查询
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 15:12
      */
     @Override
@@ -73,7 +73,7 @@ public class UserServerImpl implements UserServer {
     /**
      * 功能描述：更新
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 15:12
      */
     @Override
@@ -113,7 +113,7 @@ public class UserServerImpl implements UserServer {
     /**
      * 功能描述：删除
      *
-     * @author 卓劲科技
+     * @author 道一
      * @date 2019/4/15 15:12
      */
     @Override
